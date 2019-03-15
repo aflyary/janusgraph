@@ -3,7 +3,7 @@
     <parent>
         <groupId>org.janusgraph</groupId>
         <artifactId>janusgraph-dist</artifactId>
-        <version>0.3.2-SNAPSHOT</version>
+        <version>0.4.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
     <packaging>pom</packaging>
@@ -161,7 +161,6 @@
                                     <arguments>
                                         <argument>-classpath</argument>
                                         <argument>${project.build.directory}/dependency/janusgraph-es-${project.version}-tests.jar:${project.build.directory}/dependency/*</argument>
-                                        <argument>org.janusgraph.diskstorage.es.ElasticsearchRunner</argument>
                                         <argument>${project.build.directory}/conf/janusgraph-berkeleyje-es.properties</argument>
                                     </arguments>
                                 </configuration>
